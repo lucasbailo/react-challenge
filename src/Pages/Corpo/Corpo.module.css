@@ -1,14 +1,15 @@
+.assinaturaNewsletter {
+    background-color: #ffe29a;
+    margin-top: 16px;
+    position: relative;
+}
+
 .section_one__box, .section_two__box {
     display: flex;
     flex-direction: row;
-}
-
-.mancha__amarela {
-    position: absolute;
-    z-index:-5;
-    right: 0;
-    top: 0;
-    width: 587px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .section__box {
@@ -40,7 +41,6 @@
     line-height: 26px;
 }
 
-
 .form__box_input, .form__box_button {
     border: none;
     font-size: 16px;
@@ -65,16 +65,12 @@
     color: #FFFFFF;
 }
 
-.ficus__size {
-    position: absolute;
-    top: -150px;
-    width: 587px;
-    right: 0;
-}
-
 .section_two__box {
     align-items: center;
     justify-content: center;
+}
+
+.section_two__box__image {
     height: 316px; 
 }
 
@@ -114,3 +110,23 @@
     align-items: center;
     gap: 1rem;
 }
+
+@media (min-width: 920px) {
+    .assinaturaNewsletter {
+      background-color: transparent;
+      margin-top: 155px;
+    }
+    .assinaturaNewsletter:after {
+        content: "";
+        display: block;
+        width: 787px;
+        height: 975px;
+        background-image: url("../../assets/hero-image.png");
+        position: absolute;
+        --baseDistance: -381px;
+        top: calc(var(--baseDistance) + 50px);
+        right: 0;
+        z-index: -1;
+        pointer-events: none;
+    }
+  }

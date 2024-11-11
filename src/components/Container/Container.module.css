@@ -1,0 +1,18 @@
+.container section {
+    margin: 2em;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+@media(min-width: 920px) {
+    body {
+        background-image: url("../../assets/mancha-amarela.svg"),
+                          url("../../assets/bg.jpg");
+        background-repeat: no-repeat, 
+                          repeat-x;
+        background-position: right top;
+    }
+}

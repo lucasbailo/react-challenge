@@ -1,12 +1,10 @@
 import styles from "../Corpo/Corpo.module.css"
-import ficus from "../../../assets/ficus-lyrata.png"
-import mancha from "../../../assets/mancha-amarela.svg"
-import costela from "../../../assets/costela-adao.png"
-import elipse from "../../../assets/elipse.svg"
+import costela from "../../assets/costela-adao.png"
+import elipse from "../../assets/elipse.svg"
 
 export default function Corpo () {
     return(
-    <main>
+    <div className={styles.assinaturaNewsletter}>
         <section className={styles.section_one__box}>
             <section className={styles.section__box}>
                 <h6 className={styles.text__suaCasa}>Sua casa com as </h6>
@@ -16,14 +14,12 @@ export default function Corpo () {
                     <input className={styles.form__box_input} placeholder="Insira seu e-mail" type="text" />
                     <button className={styles.form__box_button}>Assinar Newsletter</button>
                 </form>
-                <img className={styles.mancha__amarela} src={mancha} alt="" />
-            </section>
-            <section>
-                <img className={styles.ficus__size} src={ficus} alt="" />
             </section>
         </section>
         <section className={styles.section_two__box}>
-            <img className={styles.costela__size} src={costela} alt="" />
+            <div className={styles.section_two__box__image}>
+                <img className={styles.costela__size} src={costela} alt="" />
+            </div>
             <div className={styles.section_two__div_one}>
                 <h6 className={styles.text__comoConseguir}>Como conseguir </h6>
                 <h1 className={styles.text__minhaPlanta}>minha planta</h1>
@@ -43,6 +39,6 @@ export default function Corpo () {
                 </div>
             </div>
         </section>
-    </main>
+    </div>
     )
 }

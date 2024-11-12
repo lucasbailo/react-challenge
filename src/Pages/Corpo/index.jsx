@@ -1,7 +1,7 @@
 import styles from "../Corpo/Corpo.module.css"
 import costela from "../../assets/costela-adao.png"
 import elipse from "../../assets/elipse.svg"
-import Form from "../../components/Form"
+import Formulario from "../../components/Formulario"
 
 export default function Corpo () {
     return(
@@ -11,7 +11,7 @@ export default function Corpo () {
                 <h6 className={styles.text__suaCasa}>Sua casa com as </h6>
                 <h1 className={styles.text__melhore}>melhores <br/>plantas</h1>
                 <p className={styles.text__descricao}>Encontre aqui uma vasta seleção de plantas para decorar a sua casa e torná-lo uma pessoa mais feliz no seu dia a dia. Entre com seu e-mail e assine nossa newsletter para saber das novidades da marca.</p>
-                <Form />
+                <Formulario />
             </section>
         </section>
         <section className={styles.section_two__box}>

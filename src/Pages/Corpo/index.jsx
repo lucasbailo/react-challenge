@@ -2,6 +2,7 @@ import styles from "../Corpo/Corpo.module.css"
 import costela from "../../assets/costela-adao.png"
 import elipse from "../../assets/elipse.svg"
 import Formulario from "../../components/Formulario"
+import PlantasList from "../../components/Ofertas"
 
 export default function Corpo () {
     return(
@@ -37,6 +38,7 @@ export default function Corpo () {
                 </div>
             </div>
         </section>
+        <PlantasList />
     </div>
     )
 }

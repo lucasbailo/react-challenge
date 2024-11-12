@@ -1,4 +1,5 @@
 import logo from "../../assets/logo-full.svg"
+import Container from "../Container"
 import styles from "../Header/Header.module.css"
 
 export function Header () {

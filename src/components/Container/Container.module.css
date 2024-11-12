@@ -7,12 +7,3 @@ main {
     margin: auto;
 }
 
-@media(min-width: 920px) {
-    body {
-        background-image: url("../../assets/mancha-amarela.svg"),
-                          url("../../assets/bg.jpg");
-        background-repeat: no-repeat, 
-                          repeat-x;
-        background-position: right top;
-    }
-}

@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 2em;
+    padding: 2em 6em 2em 6em;
+
 }
 
 .header__ul {

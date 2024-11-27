@@ -1,7 +1,7 @@
 .assinaturaNewsletter {
-    background-color: #ffe29a;
     margin-top: 16px;
     position: relative;
+    color: #8f8f8f;
 }
 
 .section_one__box, .section_two__box {
@@ -22,6 +22,7 @@
 }
 
 .text__suaCasa {
+    color: #8f8f8f;
     font-weight: 400;
     font-size: 22px;
 }
@@ -39,23 +40,29 @@
 .text__descricao {
     font-size: 16px;
     line-height: 26px;
+    color: #8f8f8f;
 }
 
 .section_two__box {
+    padding-top: 4rem;
     align-items: center;
     justify-content: center;
 }
 
 .section_two__box__image {
-    height: 316px; 
+    height: 444px; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .section_two__div_one {
-    padding: 1rem;
+    padding: 4rem;
     background-color: #FFFFFF;
     max-width: 100%;
     max-height: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .costela__size {

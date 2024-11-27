@@ -1,18 +1,15 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import styles from "../Ofertas/PlantasList.module.css"
-import cyperus from "../../assets/Cyperus.png"
-import delairea from "../../assets/Delairea.png"
-import datura from "../../assets/Datura.png"
 
 export default function PlantasList() {
     
-    const caminho = "src/assets/"
+
     const [plantas, setPlantas] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        axios.get("https://gist.githubusercontent.com/bugan/41d60ffa23fa0c4044cc138bf670780d/raw?utm_medium=email&_hsenc=p2ANqtz--mi6-y6c_T4egtItPSJSyi3gzWJmpZTkFW9Mpk5B4agNVs5LkvwvtNPXE1XMD0UHMDhBRudteBO_dCQtFjvpXk0ybWWw&_hsmi=231361624&utm_content=231361624&utm_source=hs_automation")
+        axios.get("https://gist.githubusercontent.com/lucasbailo/b1a28ea8b61c889da4e367458cd46fed/raw/bbd9d29901bda0770ae7486f1252cf2e94811370/gistfile1.txt")
         .then(response => {
             setPlantas(response.data)
             setLoading(false)
@@ -29,8 +26,10 @@ export default function PlantasList() {
 
     return(
         <section className={styles.section__ofertas}>
-            <h1 className={styles.text__conheca}>Conheça nossas ofertas</h1>
-            <h1 className={styles.text__ofertas}>ofertas</h1>
+            <div className={styles.text__title_box}>
+                <h1 className={styles.text__conheca}>Conheça nossas ofertas</h1>
+                <h1 className={styles.text__ofertas}>ofertas</h1>
+            </div>
 
 
             <div className={styles.container__cards}>
@@ -39,7 +38,7 @@ export default function PlantasList() {
                     <>
                         <div key={planta.ordem} className={styles.card__box}>
                                 <div className={styles.image__box}>
-                                    <img className={styles.image__size} src={caminho + planta.img + ".png"} alt="" />
+                                    <img className={styles.image__size} src={planta.img} alt="" />
                                 </div>
                                 <div className={styles.card__box__text_div}>
                                     <h2 className={styles.plant__name}>{planta.name}</h2>
@@ -50,36 +49,6 @@ export default function PlantasList() {
                     </>
                     ))}
                 {/* Fim do map */}
-                <div className={styles.card__box}>
-                    <div className={styles.image__box}>
-                        <img className={styles.image__size} src={cyperus} alt="" />
-                    </div>
-                    <div className={styles.card__box__text_div}>
-                        <h2 className={styles.plant__name}>Cyperus rotundus</h2>
-                        <span className={styles.plant__price}>R$ 20.00</span>
-                        <a href="#" className={styles.plant__buy}>Comprar <strong>→</strong></a>
-                    </div>
-                </div>
-                <div className={styles.card__box}>
-                    <div className={styles.image__box}>
-                        <img className={styles.image__size} src={delairea} alt="" />
-                    </div>
-                    <div className={styles.card__box__text_div}>
-                        <h2 className={styles.plant__name}>Delairea odorata</h2>
-                        <span className={styles.plant__price}>R$ 79.90</span>
-                        <a href="#" className={styles.plant__buy}>Comprar <strong>→</strong></a>
-                    </div>
-                </div>
-                <div className={styles.card__box}>
-                    <div className={styles.image__box}>
-                        <img className={styles.image__size} src={datura} alt="" />
-                    </div>
-                    <div className={styles.card__box__text_div}>
-                        <h2 className={styles.plant__name}>Datura metel</h2>
-                        <span className={styles.plant__price}>R$ 37.90</span>
-                        <a href="#" className={styles.plant__buy}>Comprar <strong>→</strong></a>
-                    </div>
-                </div>
             </div>
 
         </section>

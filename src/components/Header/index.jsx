@@ -1,5 +1,4 @@
 import logo from "../../assets/logo-full.svg"
-import Container from "../Container"
 import styles from "../Header/Header.module.css"
 
 export function Header () {
@@ -9,7 +8,7 @@ export function Header () {
                 <img src={logo} alt="" />
             </div>
             <ul className={styles.header__ul}>
-                <li><a href="google.com" className={styles.header__link}>Como fazer</a></li>
+                <li><a href="#" className={styles.header__link}>Como fazer</a></li>
                 <li>/</li>
                 <li><a href="#" className={styles.header__link}>Ofertas</a></li>
                 <li>/</li>

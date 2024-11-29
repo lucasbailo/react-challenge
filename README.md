@@ -41,9 +41,11 @@ const sendEmail = (e) => {
 
 - `React Vite`
 - [`Ant Design`](https://www.npmjs.com/package/antd)
+- [`Axios`](https://www.npmjs.com/package/axios)
 
 ## You Can
 - See the products;
+- Consume an API - product list;
 - Check if the email is valid;
 - Receive an automatic email.
 

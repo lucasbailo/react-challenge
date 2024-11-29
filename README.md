@@ -1,12 +1,55 @@
-# React + Vite
+## Welcome to a Front-End Challenge 👋
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Casa das Plantas
 
-Currently, two official plugins are available:
+## Test the project yourself: [Test the project here!!!](https://react-challenge-red.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Full Page
 
+<img src="./src/assets/gifs/1129.gif" alt="Full Page" width="70%">
 
-## Project Figma
--[Figma](https://www.figma.com/design/0yOQR6fGtbdrmqeStiO0jf/7Days-React?node-id=1-2&node-type=frame&t=ugQlwW6qK6i7tlEY-0)
+## Add your email
+
+<img src="./src/assets/gifs/gif2.gif" alt="Receive an email" width="70%">
+
+## Some code that I'm proud of
+```js
+const sendEmail = (e) => {
+    e.preventDefault()
+
+    if(invalidEmail !== "" || emptyEmail !== "" ) {
+        return;
+    } else {
+        setAllRight("Email de contato enviado!")
+    }
+    alert("Email enviado com sucesso!")
+
+    emailjs.sendForm('######', '########', e.target, '############')
+    .then((response) => {
+        console.log('Email enviado', response.status, response.text)
+        setEmail('')
+        setInvalidEmail('')
+        setAllRight('')
+        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    }, (err) => {
+        console.log("ERRO: ", err)
+    })
+}
+```
+
+## Built with
+
+- `React Vite`
+- [`Ant Design`](https://www.npmjs.com/package/antd)
+
+## You Can
+- See the products;
+- Check if the email is valid;
+- Receive an automatic email.
+
+## Author
+
+- Website - [My GitHub](https://github.com/lucasbailo)
+- Frontend Mentor - [@lucasbailo](https://www.frontendmentor.io/profile/lucasbailo)
+- Instagram - [@lucassbailo](https://www.instagram.com/lucassbailo/)
+- LinkedIn - [Lucas Bailo](https://www.linkedin.com/in/lcsbailo)

@@ -3,6 +3,7 @@
 # Casa das Plantas
 
 ## Test the project yourself: [Test the project here!!!](https://react-challenge-red.vercel.app/)
+## [Figma Project - model](https://www.figma.com/design/0yOQR6fGtbdrmqeStiO0jf/7Days-React?node-id=0-1&p=f)
 
 ### Full Page
 
